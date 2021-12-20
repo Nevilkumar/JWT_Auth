@@ -5,7 +5,6 @@ const authRoutes = require('./routes/authRoutes');
 const cookieParser = require('cookie-parser');
 const { requireAuth, checkUser } = require('./middleware/authMiddleware');
 
-
 // middleware
 app.use(express.static('public'));
 app.use(express.json());
