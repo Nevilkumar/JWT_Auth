@@ -25,8 +25,6 @@ app.get('/', (req, res) => res.render('home'));
 
 app.get('/profile', requireAuth, (req, res) => res.render('profile'));
 
-
-
 app.use(authRoutes);
 
 //Server Declaration
