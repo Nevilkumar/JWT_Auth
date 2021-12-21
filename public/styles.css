@@ -1,16 +1,17 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-
+:root{
+  --dark:#161b21;
+  --text: #f4a950;
+  --white: #fff;
+}
 body {
-  margin: 20px 40px;
+  margin: 30px 40px;
   font-size: 1.2rem;
   letter-spacing: 1px;
-  background: #fafafa;
   font-family: "Quicksand", sans-serif;
-  background: #6a3093; /* fallback for old browsers */
-  color: black;
-  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-  background: linear-gradient(to right, #a044ff, #6a3093);
+  background: var(--dark);
+  color: var(--dark);
 }
 h1,
 h2,
@@ -28,19 +29,24 @@ footer {
   margin: 0;
   padding: 0;
   font-family: "Quicksand", sans-serif;
-  color: white;
+  color: var(--dark);
 }
 ul {
   list-style-type: none;
 }
 a {
   text-decoration: none;
+  color: #f4a950;
+  text-transform: uppercase;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 100px;
+}
+nav .heading{
+  font-size: 35px;
 }
 nav ul {
   display: flex;
@@ -51,16 +57,19 @@ nav li {
 }
 nav li a {
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.8em;
   display: block;
   padding: 10px 16px;
   letter-spacing: 2px;
+  color: var(--dark);
+  background: var(--text);
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bolder;
 }
 .btn {
   border-radius: 4px;
-  background: black;
-  color: white;
+  background: var(--dark);
+  color: var(--white);
 }
 form h2 {
   font-size: 2.4em;
@@ -73,26 +82,30 @@ form {
   padding: 40px;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-color: #51087e;
-  box-shadow: 0 0 15px black;
+  background-color: var(--text);
+  color: var(--dark);
 }
 input {
   padding: 10px 12px;
   border-radius: 4px;
-  outline: none;
   font-size: 1em;
   width: 100%;
-  color: black;
+  outline: none;
+  font-weight: bold;
+  border: 4px solid var(--dark);
+  color: var(--dark);
 }
 label {
   display: block;
   margin: 20px 0 10px;
+  font-size: 22px;
+  font-weight: bold;
 }
 button {
   border-radius: 4px;
   cursor: pointer;
-  background: black;
-  color: white;
+  background: var(--dark);
+  color: var(--white);
   border: 0;
   text-transform: uppercase;
   font-weight: 700;
@@ -127,15 +140,18 @@ header h3 {
   font-size: 1.6em;
   margin-bottom: 10px;
   margin-left: 2px;
-  color: white;
+  color: var(--white);
 }
 header .btn {
   margin-top: 20px;
-  padding: 12px 18px;
+  padding: 15px 18px;
   text-transform: uppercase;
   font-weight: bold;
   display: inline-block;
-  font-size: 0.8em;
+  background: var(--text);
+  color: var(--dark);
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .profile-container {
@@ -146,8 +162,7 @@ header .btn {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #51087e;
-  box-shadow: 0 0 15px black;
+  background-color: var(--text);
   border-radius: 8px;
   margin: auto;
   margin-top: 140px;
@@ -155,6 +170,27 @@ header .btn {
 .profile-container h1,
 .profile-container h2 {
   margin: 10px;
-  color: white;
-  /* line-height: 350px; */
+  color: var(--dark);
+}
+.getstarted{
+  margin-top: 20px;
+  text-transform: uppercase;
+  display: block;
+  padding: 15px 20px;
+  letter-spacing: 2px;
+  color: var(--text);
+  background: var(--dark);
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.headings h2{
+  color: var(--text);
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.smoothie{
+  margin-right: 25px;
 }
